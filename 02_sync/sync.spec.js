@@ -53,13 +53,13 @@ describe('Lodash: groupBy', () => {
     expect(_.groupBy(array, Math.floor)).toEqual(result)
   })
 
-  test('should group array items by lenght', () => {
+  test('should group array items by length', () => {
     const array = ["one", "two", "three"]
     const result = {
-      5: ['three'],
-      3: ['one', 'two']
+      3: ['one', 'two'],
+      5: ['three']
     }
-    expect(_.groupBy(array, "lenght")).toEqual(result)
+    expect(_.groupBy(array, "length")).toEqual(result)
   })
 
   test('should NOT return array', () => {
